@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC1A8D582685F78B0086C950 /* ChangePasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1A8D572685F78B0086C950 /* ChangePasswordController.swift */; };
+		DC21EDF8262C7978005423E3 /* CodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC21EDF7262C7978005423E3 /* CodeViewController.swift */; };
+		DC8F7912262B3AD6006FEEBE /* PatentProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8F7911262B3AD6006FEEBE /* PatentProfileController.swift */; };
+		DC90C83C262981AD00AC8AB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC90C83B262981AD00AC8AB7 /* ViewController.swift */; };
+		DC90C8412629829100AC8AB7 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC90C8402629829100AC8AB7 /* SignUpController.swift */; };
+		DC90C8472629832D00AC8AB7 /* Patent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC90C8462629832D00AC8AB7 /* Patent.swift */; };
+		DC90C84B26298B1800AC8AB7 /* PatentPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC90C84A26298B1800AC8AB7 /* PatentPage.storyboard */; };
+		DC90C84E26298B4600AC8AB7 /* PatentPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC90C84D26298B4600AC8AB7 /* PatentPageController.swift */; };
+		DC90C8522629A58C00AC8AB7 /* PatentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC90C8512629A58C00AC8AB7 /* PatentManager.swift */; };
+		DC90C8552629B37500AC8AB7 /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC90C8542629B37500AC8AB7 /* SpinnerViewController.swift */; };
+		DC9B063D262318EA00B9E49A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9B063C262318EA00B9E49A /* AppDelegate.swift */; };
+		DC9B063F262318EA00B9E49A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9B063E262318EA00B9E49A /* SceneDelegate.swift */; };
+		DC9B0644262318EA00B9E49A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC9B0642262318EA00B9E49A /* Main.storyboard */; };
+		DC9B0646262318EB00B9E49A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC9B0645262318EB00B9E49A /* Assets.xcassets */; };
+		DC9B0649262318EB00B9E49A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC9B0647262318EB00B9E49A /* LaunchScreen.storyboard */; };
+		DCC39C2F2680F15E00D87CA2 /* EmailVlidationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC39C2E2680F15E00D87CA2 /* EmailVlidationController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DC1A8D572685F78B0086C950 /* ChangePasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordController.swift; sourceTree = "<group>"; };
+		DC21EDF7262C7978005423E3 /* CodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeViewController.swift; sourceTree = "<group>"; };
+		DC8F7911262B3AD6006FEEBE /* PatentProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatentProfileController.swift; sourceTree = "<group>"; };
+		DC90C83B262981AD00AC8AB7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC90C8402629829100AC8AB7 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		DC90C8462629832D00AC8AB7 /* Patent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patent.swift; sourceTree = "<group>"; };
+		DC90C84A26298B1800AC8AB7 /* PatentPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PatentPage.storyboard; sourceTree = "<group>"; };
+		DC90C84D26298B4600AC8AB7 /* PatentPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatentPageController.swift; sourceTree = "<group>"; };
+		DC90C8512629A58C00AC8AB7 /* PatentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatentManager.swift; sourceTree = "<group>"; };
+		DC90C8542629B37500AC8AB7 /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
+		DC9B0639262318EA00B9E49A /* Joclinics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Joclinics.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC9B063C262318EA00B9E49A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC9B063E262318EA00B9E49A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DC9B0643262318EA00B9E49A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC9B0645262318EB00B9E49A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC9B0648262318EB00B9E49A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC9B064A262318EB00B9E49A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCC39C2E2680F15E00D87CA2 /* EmailVlidationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailVlidationController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC9B0636262318EA00B9E49A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC9B0630262318EA00B9E49A = {
+			isa = PBXGroup;
+			children = (
+				DC9B063B262318EA00B9E49A /* Joclinics */,
+				DC9B063A262318EA00B9E49A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC9B063A262318EA00B9E49A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC9B0639262318EA00B9E49A /* Joclinics.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC9B063B262318EA00B9E49A /* Joclinics */ = {
+			isa = PBXGroup;
+			children = (
+				DC9B063C262318EA00B9E49A /* AppDelegate.swift */,
+				DC9B063E262318EA00B9E49A /* SceneDelegate.swift */,
+				DC9B06552623196600B9E49A /* Model */,
+				DC9B06542623196000B9E49A /* View */,
+				DC9B06532623195400B9E49A /* Controller */,
+				DC9B0645262318EB00B9E49A /* Assets.xcassets */,
+				DC9B064A262318EB00B9E49A /* Info.plist */,
+			);
+			path = Joclinics;
+			sourceTree = "<group>";
+		};
+		DC9B06532623195400B9E49A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DC90C83B262981AD00AC8AB7 /* ViewController.swift */,
+				DC90C8402629829100AC8AB7 /* SignUpController.swift */,
+				DC90C84D26298B4600AC8AB7 /* PatentPageController.swift */,
+				DC90C8542629B37500AC8AB7 /* SpinnerViewController.swift */,
+				DC8F7911262B3AD6006FEEBE /* PatentProfileController.swift */,
+				DC21EDF7262C7978005423E3 /* CodeViewController.swift */,
+				DCC39C2E2680F15E00D87CA2 /* EmailVlidationController.swift */,
+				DC1A8D572685F78B0086C950 /* ChangePasswordController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DC9B06542623196000B9E49A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DC9B0642262318EA00B9E49A /* Main.storyboard */,
+				DC9B0647262318EB00B9E49A /* LaunchScreen.storyboard */,
+				DC90C84A26298B1800AC8AB7 /* PatentPage.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DC9B06552623196600B9E49A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DC90C8462629832D00AC8AB7 /* Patent.swift */,
+				DC90C8512629A58C00AC8AB7 /* PatentManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC9B0638262318EA00B9E49A /* Joclinics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC9B064D262318EB00B9E49A /* Build configuration list for PBXNativeTarget "Joclinics" */;
+			buildPhases = (
+				DC9B0635262318EA00B9E49A /* Sources */,
+				DC9B0636262318EA00B9E49A /* Frameworks */,
+				DC9B0637262318EA00B9E49A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Joclinics;
+			productName = Joclinics;
+			productReference = DC9B0639262318EA00B9E49A /* Joclinics.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC9B0631262318EA00B9E49A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					DC9B0638262318EA00B9E49A = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = DC9B0634262318EA00B9E49A /* Build configuration list for PBXProject "Joclinics" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC9B0630262318EA00B9E49A;
+			productRefGroup = DC9B063A262318EA00B9E49A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC9B0638262318EA00B9E49A /* Joclinics */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC9B0637262318EA00B9E49A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC9B0649262318EB00B9E49A /* LaunchScreen.storyboard in Resources */,
+				DC90C84B26298B1800AC8AB7 /* PatentPage.storyboard in Resources */,
+				DC9B0646262318EB00B9E49A /* Assets.xcassets in Resources */,
+				DC9B0644262318EA00B9E49A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC9B0635262318EA00B9E49A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC90C8522629A58C00AC8AB7 /* PatentManager.swift in Sources */,
+				DC8F7912262B3AD6006FEEBE /* PatentProfileController.swift in Sources */,
+				DC1A8D582685F78B0086C950 /* ChangePasswordController.swift in Sources */,
+				DC9B063D262318EA00B9E49A /* AppDelegate.swift in Sources */,
+				DC21EDF8262C7978005423E3 /* CodeViewController.swift in Sources */,
+				DC90C83C262981AD00AC8AB7 /* ViewController.swift in Sources */,
+				DC90C8412629829100AC8AB7 /* SignUpController.swift in Sources */,
+				DC90C8552629B37500AC8AB7 /* SpinnerViewController.swift in Sources */,
+				DCC39C2F2680F15E00D87CA2 /* EmailVlidationController.swift in Sources */,
+				DC9B063F262318EA00B9E49A /* SceneDelegate.swift in Sources */,
+				DC90C84E26298B4600AC8AB7 /* PatentPageController.swift in Sources */,
+				DC90C8472629832D00AC8AB7 /* Patent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DC9B0642262318EA00B9E49A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC9B0643262318EA00B9E49A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC9B0647262318EB00B9E49A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC9B0648262318EB00B9E49A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC9B064B262318EB00B9E49A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC9B064C262318EB00B9E49A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC9B064E262318EB00B9E49A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QC3YYNNH8P;
+				INFOPLIST_FILE = Joclinics/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hussSaed.Joclinics;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC9B064F262318EB00B9E49A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QC3YYNNH8P;
+				INFOPLIST_FILE = Joclinics/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hussSaed.Joclinics;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC9B0634262318EA00B9E49A /* Build configuration list for PBXProject "Joclinics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC9B064B262318EB00B9E49A /* Debug */,
+				DC9B064C262318EB00B9E49A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC9B064D262318EB00B9E49A /* Build configuration list for PBXNativeTarget "Joclinics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC9B064E262318EB00B9E49A /* Debug */,
+				DC9B064F262318EB00B9E49A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC9B0631262318EA00B9E49A /* Project object */;
+}
