@@ -17,7 +17,7 @@ class PatentProfileController: UIViewController {
                 //print(patent!)
             }
             catch{
-                print("error")
+                print("error testing")
             }
         }
     }
