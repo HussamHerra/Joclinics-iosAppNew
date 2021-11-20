@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vFY-Wu-ogs">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vFY-Wu-ogs">
     <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -49,60 +49,11 @@
                                     <segue destination="yJx-Bd-zHn" kind="presentation" identifier="test" modalPresentationStyle="fullScreen" id="Gtm-aM-GFx"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5eg-fM-Xbr">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="192"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jdC-NY-bbr">
-                                        <rect key="frame" x="73.5" y="14.5" width="173" height="163"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logowithoutback" translatesAutoresizingMaskIntoConstraints="NO" id="shY-V2-mup">
-                                                <rect key="frame" x="0.0" y="0.0" width="173" height="117.5"/>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s5I-lh-jfl">
-                                                <rect key="frame" x="21.5" y="117.5" width="130" height="21.5"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0sp-h4-CYc">
-                                                <rect key="frame" x="63" y="139" width="47" height="24"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="s5I-lh-jfl" firstAttribute="width" secondItem="jdC-NY-bbr" secondAttribute="width" multiplier="0.752679" id="2D5-1E-EcK"/>
-                                            <constraint firstItem="shY-V2-mup" firstAttribute="height" secondItem="jdC-NY-bbr" secondAttribute="height" multiplier="0.721528" id="amj-88-8mx"/>
-                                            <constraint firstItem="s5I-lh-jfl" firstAttribute="height" secondItem="jdC-NY-bbr" secondAttribute="height" multiplier="0.132456" id="q7Z-ae-ao3"/>
-                                            <constraint firstItem="shY-V2-mup" firstAttribute="width" secondItem="jdC-NY-bbr" secondAttribute="width" id="tKV-2g-vQO"/>
-                                        </constraints>
-                                    </stackView>
-                                </subviews>
-                                <color key="backgroundColor" red="0.31338340044021606" green="0.90915387868881226" blue="0.69558638334274292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="jdC-NY-bbr" firstAttribute="height" secondItem="5eg-fM-Xbr" secondAttribute="height" multiplier="0.848372" id="m3t-9k-xWg"/>
-                                    <constraint firstItem="jdC-NY-bbr" firstAttribute="centerX" secondItem="5eg-fM-Xbr" secondAttribute="centerX" id="s5g-Tt-2Df"/>
-                                    <constraint firstItem="jdC-NY-bbr" firstAttribute="centerY" secondItem="5eg-fM-Xbr" secondAttribute="centerY" id="twr-dX-Uee"/>
-                                    <constraint firstItem="jdC-NY-bbr" firstAttribute="width" secondItem="5eg-fM-Xbr" secondAttribute="width" multiplier="0.541546" id="x1B-ki-Wo8"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LVi-F8-uId"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="LVi-F8-uId" firstAttribute="trailing" secondItem="5eg-fM-Xbr" secondAttribute="trailing" id="AZ5-FV-wpQ"/>
-                            <constraint firstItem="5eg-fM-Xbr" firstAttribute="width" secondItem="mOK-uc-78i" secondAttribute="width" id="Ki1-Et-coh"/>
-                            <constraint firstItem="5eg-fM-Xbr" firstAttribute="height" secondItem="mOK-uc-78i" secondAttribute="height" multiplier="0.4" id="MLi-i9-gog"/>
-                            <constraint firstItem="5eg-fM-Xbr" firstAttribute="leading" secondItem="LVi-F8-uId" secondAttribute="leading" id="bvC-8f-pK5"/>
-                            <constraint firstItem="5eg-fM-Xbr" firstAttribute="top" secondItem="mOK-uc-78i" secondAttribute="top" id="fUf-0V-LT9"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="الشخصية" image="person.crop.circle" catalog="system" id="Gwv-oM-I6q"/>
-                    <connections>
-                        <outlet property="firstLastName" destination="s5I-lh-jfl" id="q4r-MQ-LRG"/>
-                        <outlet property="userName" destination="0sp-h4-CYc" id="2Ff-Th-70C"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VZ6-rc-Iwl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -170,7 +121,6 @@
         <image name="arrowshape.turn.up.left.circle.fill" catalog="system" width="128" height="121"/>
         <image name="calendar" catalog="system" width="128" height="106"/>
         <image name="face.dashed.fill" catalog="system" width="128" height="121"/>
-        <image name="logowithoutback" width="100" height="100"/>
         <image name="person.crop.circle" catalog="system" width="128" height="121"/>
     </resources>
 </document>

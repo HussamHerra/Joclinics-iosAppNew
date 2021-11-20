@@ -8,18 +8,22 @@ class PatentProfileController: UIViewController {
     let preferences = UserDefaults.standard
     override func viewDidLoad() {
         super.viewDidLoad()
-        let jsonString = preferences.string(forKey: "Patent")
-        if let dataFromJsonString = jsonString?.data(using: .utf8) {
-            do{
-                patent = try JSONDecoder().decode(Patent.self,from: dataFromJsonString)
-                userName.text = patent!.UserName
-                firstLastName.text = "\(patent!.FirstName) \(patent!.LastName)"
-                //print(patent!)
-            }
-            catch{
-                print("error testing")
-            }
-        }
+        createView()
+//        let jsonString = preferences.string(forKey: "Patent")
+//        if let dataFromJsonString = jsonString?.data(using: .utf8) {
+//            do{
+//                patent = try JSONDecoder().decode(Patent.self,from: dataFromJsonString)
+//                userName.text = patent!.UserName
+//                firstLastName.text = "\(patent!.FirstName) \(patent!.LastName)"
+//                //print(patent!)
+//            }
+//            catch{
+//                print("error testing")
+//            }
+//        }
+    }
+    func createView(){
+        view.backgroundColor = .blue
     }
     @IBAction func logOut(_ sender: UIButton) {
         preferences.removeObject(forKey: "Patent")
