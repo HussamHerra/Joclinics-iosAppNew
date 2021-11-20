@@ -21,7 +21,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
         view.endEditing(true)
     }
     @IBAction func changeType(_ sender: UIButton) {
-        if sender.currentTitle == "مريض" {
+        if sender.currentTitle == "مريض." {
             loginType.setTitle("طبيب", for: .normal)
         }
         else {
