@@ -39,8 +39,8 @@ class ViewController: UIViewController, UITextFieldDelegate{
     }
     @IBAction func loginBtn(_ sender: UIButton) {
         if (!userName.hasText || !password.hasText) {
-//            self.showToast(message: "يجب ادخال كلمة السر و البريد الالكتروني")
-            self.performSegue(withIdentifier: "patentIDsAGUE", sender: Self.self)
+            self.showToast(message: "يجب ادخال كلمة السر و البريد الالكتروني")
+            //self.performSegue(withIdentifier: "patentIDsAGUE", sender: Self.self)
         }
         else{
         if loginType.currentTitle == "مريض"  {

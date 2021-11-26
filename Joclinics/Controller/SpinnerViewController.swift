@@ -1,14 +1,7 @@
-//
-//  SpinnerViewController.swift
-//  Joclinics
-//
-//  Created by Hussam on 16/04/2021.
-//
-
 import UIKit
 
 class SpinnerViewController: UIViewController {
-
+    
     @IBOutlet weak var spinnerOutlit: UIActivityIndicatorView!
     override func viewDidLoad() {
         super.viewDidLoad()

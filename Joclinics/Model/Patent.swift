@@ -1,10 +1,3 @@
-//
-//  Patent.swift
-//  Joclinics
-//
-//  Created by Hussam on 16/04/2021.
-//
-
 import Foundation
 
 struct Patent : Codable{

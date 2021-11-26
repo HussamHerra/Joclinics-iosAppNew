@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A99DAF342750EBB7007934C2 /* ClinicsSortController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99DAF332750EBB7007934C2 /* ClinicsSortController.swift */; };
+		A99DAF362750EC50007934C2 /* CityFilterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99DAF352750EC50007934C2 /* CityFilterController.swift */; };
+		A99DAF3B27510447007934C2 /* ClinicsFilterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99DAF3927510447007934C2 /* ClinicsFilterTableViewCell.swift */; };
+		A99DAF3C27510447007934C2 /* ClinicsFilterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A99DAF3A27510447007934C2 /* ClinicsFilterTableViewCell.xib */; };
+		A99DAF4327511504007934C2 /* Clinics.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99DAF4227511504007934C2 /* Clinics.swift */; };
+		A99DAF45275116D7007934C2 /* ClinicsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99DAF44275116D7007934C2 /* ClinicsManager.swift */; };
+		A9BECBE32750BD7E00F12A32 /* PatentClinicsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BECBE22750BD7E00F12A32 /* PatentClinicsController.swift */; };
+		A9BECBE52750C24200F12A32 /* PatentFilterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BECBE42750C24200F12A32 /* PatentFilterController.swift */; };
+		A9BECBE82750C4FB00F12A32 /* FilterStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BECBE72750C4FB00F12A32 /* FilterStruct.swift */; };
 		DC1A8D582685F78B0086C950 /* ChangePasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1A8D572685F78B0086C950 /* ChangePasswordController.swift */; };
 		DC21EDF8262C7978005423E3 /* CodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC21EDF7262C7978005423E3 /* CodeViewController.swift */; };
 		DC8F7912262B3AD6006FEEBE /* PatentProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8F7911262B3AD6006FEEBE /* PatentProfileController.swift */; };
@@ -26,6 +35,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A99DAF332750EBB7007934C2 /* ClinicsSortController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicsSortController.swift; sourceTree = "<group>"; };
+		A99DAF352750EC50007934C2 /* CityFilterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityFilterController.swift; sourceTree = "<group>"; };
+		A99DAF3927510447007934C2 /* ClinicsFilterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicsFilterTableViewCell.swift; sourceTree = "<group>"; };
+		A99DAF3A27510447007934C2 /* ClinicsFilterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClinicsFilterTableViewCell.xib; sourceTree = "<group>"; };
+		A99DAF4227511504007934C2 /* Clinics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clinics.swift; sourceTree = "<group>"; };
+		A99DAF44275116D7007934C2 /* ClinicsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicsManager.swift; sourceTree = "<group>"; };
+		A9BECBE22750BD7E00F12A32 /* PatentClinicsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatentClinicsController.swift; sourceTree = "<group>"; };
+		A9BECBE42750C24200F12A32 /* PatentFilterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatentFilterController.swift; sourceTree = "<group>"; };
+		A9BECBE72750C4FB00F12A32 /* FilterStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterStruct.swift; sourceTree = "<group>"; };
 		DC1A8D572685F78B0086C950 /* ChangePasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordController.swift; sourceTree = "<group>"; };
 		DC21EDF7262C7978005423E3 /* CodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeViewController.swift; sourceTree = "<group>"; };
 		DC8F7911262B3AD6006FEEBE /* PatentProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatentProfileController.swift; sourceTree = "<group>"; };
@@ -57,6 +75,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A99DAF322750EB4A007934C2 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				A99DAF3927510447007934C2 /* ClinicsFilterTableViewCell.swift */,
+				A99DAF3A27510447007934C2 /* ClinicsFilterTableViewCell.xib */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		A9BECBE62750C4CC00F12A32 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				A9BECBE72750C4FB00F12A32 /* FilterStruct.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		DC9B0630262318EA00B9E49A = {
 			isa = PBXGroup;
 			children = (
@@ -80,7 +115,9 @@
 				DC9B063E262318EA00B9E49A /* SceneDelegate.swift */,
 				DC9B06552623196600B9E49A /* Model */,
 				DC9B06542623196000B9E49A /* View */,
+				A99DAF322750EB4A007934C2 /* TableViewCells */,
 				DC9B06532623195400B9E49A /* Controller */,
+				A9BECBE62750C4CC00F12A32 /* Helper */,
 				DC9B0645262318EB00B9E49A /* Assets.xcassets */,
 				DC9B064A262318EB00B9E49A /* Info.plist */,
 			);
@@ -98,6 +135,10 @@
 				DC21EDF7262C7978005423E3 /* CodeViewController.swift */,
 				DCC39C2E2680F15E00D87CA2 /* EmailVlidationController.swift */,
 				DC1A8D572685F78B0086C950 /* ChangePasswordController.swift */,
+				A9BECBE22750BD7E00F12A32 /* PatentClinicsController.swift */,
+				A9BECBE42750C24200F12A32 /* PatentFilterController.swift */,
+				A99DAF332750EBB7007934C2 /* ClinicsSortController.swift */,
+				A99DAF352750EC50007934C2 /* CityFilterController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -117,6 +158,8 @@
 			children = (
 				DC90C8462629832D00AC8AB7 /* Patent.swift */,
 				DC90C8512629A58C00AC8AB7 /* PatentManager.swift */,
+				A99DAF4227511504007934C2 /* Clinics.swift */,
+				A99DAF44275116D7007934C2 /* ClinicsManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -178,6 +221,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A99DAF3C27510447007934C2 /* ClinicsFilterTableViewCell.xib in Resources */,
 				DC9B0649262318EB00B9E49A /* LaunchScreen.storyboard in Resources */,
 				DC90C84B26298B1800AC8AB7 /* PatentPage.storyboard in Resources */,
 				DC9B0646262318EB00B9E49A /* Assets.xcassets in Resources */,
@@ -192,8 +236,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9BECBE32750BD7E00F12A32 /* PatentClinicsController.swift in Sources */,
+				A9BECBE52750C24200F12A32 /* PatentFilterController.swift in Sources */,
+				A99DAF4327511504007934C2 /* Clinics.swift in Sources */,
+				A99DAF3B27510447007934C2 /* ClinicsFilterTableViewCell.swift in Sources */,
 				DC90C8522629A58C00AC8AB7 /* PatentManager.swift in Sources */,
+				A99DAF362750EC50007934C2 /* CityFilterController.swift in Sources */,
+				A9BECBE82750C4FB00F12A32 /* FilterStruct.swift in Sources */,
+				A99DAF45275116D7007934C2 /* ClinicsManager.swift in Sources */,
 				DC8F7912262B3AD6006FEEBE /* PatentProfileController.swift in Sources */,
+				A99DAF342750EBB7007934C2 /* ClinicsSortController.swift in Sources */,
 				DC1A8D582685F78B0086C950 /* ChangePasswordController.swift in Sources */,
 				DC9B063D262318EA00B9E49A /* AppDelegate.swift in Sources */,
 				DC21EDF8262C7978005423E3 /* CodeViewController.swift in Sources */,

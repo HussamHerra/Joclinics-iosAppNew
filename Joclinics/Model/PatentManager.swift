@@ -1,10 +1,3 @@
-//
-//  PatentManager.swift
-//  Joclinics
-//
-//  Created by Hussam on 16/04/2021.
-//
-
 import Foundation
 
 protocol PatentManagerDelegate {
@@ -69,7 +62,9 @@ struct PatentManager{
     }
     
     func CheckIfUserNameOrEmailIsInDatabase(Email : String,UserName : String,code : Int){
+        print("from check user name")
         let urlString = "\(patentURL)/CheckIfUserNameOrEmailIsInDatabase?UserName=\(UserName)&Email=\(Email)&code=\(code)"
+        print(urlString)
         if let url = URL(string: urlString) {
             let session = URLSession(configuration: .default)
             let task = session.dataTask(with: url) { (data, response, error) in
@@ -79,6 +74,7 @@ struct PatentManager{
                 }
                 if let dataResponse = data {
                     do{
+                        print("data response is : " , dataResponse)
                         let jsonResponse = try JSONSerialization.jsonObject(
                             with:
                                 dataResponse, options: [])
@@ -95,20 +91,20 @@ struct PatentManager{
         }
     }
     func SignUpPatent(FirstName: String,LastName : String,UserName : String,Password : String,ChronicDiseases : String,Email : String,Gender : String,PhoneNumber : String,DateOfBirth : String,address : String)
-        {
+    {
         let parameters =
-            ["FirstName": FirstName,
-             "LastName": LastName,
-             "UserName":UserName,
-             "Password":Password,
-             "ChronicDiseases":ChronicDiseases,
-             "Email":Email,
-             "Gender":Gender,
-             "PhoneNumber":PhoneNumber,
-             "DateOfBirth":DateOfBirth,
-             "address":address
-            ]
-            as [String : Any]
+        ["FirstName": FirstName,
+         "LastName": LastName,
+         "UserName":UserName,
+         "Password":Password,
+         "ChronicDiseases":ChronicDiseases,
+         "Email":Email,
+         "Gender":Gender,
+         "PhoneNumber":PhoneNumber,
+         "DateOfBirth":DateOfBirth,
+         "address":address
+        ]
+        as [String : Any]
         let urlString = "\(patentURL)/addNewPatent"
         if let url = URL(string: urlString) {
             let session = URLSession(configuration: .default)

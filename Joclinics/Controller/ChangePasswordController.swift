@@ -1,10 +1,3 @@
-//
-//  ChangePasswordController.swift
-//  Joclinics
-//
-//  Created by Hussam on 25/06/2021.
-//
-
 import UIKit
 
 class ChangePasswordController: UIViewController {
@@ -43,7 +36,6 @@ extension ChangePasswordController : PatentManagerDelegate{
     }
     func doneSendEmail(_ patentManager: PatentManager) {
         DispatchQueue.main.async {
-            //self.dismiss(animated: true, completion: nil)
             self.performSegue(withIdentifier: "backToLoginScreen", sender: self)
         }
     }

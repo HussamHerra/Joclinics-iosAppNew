@@ -1,10 +1,3 @@
-//
-//  CodeViewController.swift
-//  Joclinics
-//
-//  Created by Hussam on 18/04/2021.
-//
-
 import UIKit
 
 class CodeViewController: UIViewController, PatentManagerDelegate {
@@ -26,6 +19,7 @@ class CodeViewController: UIViewController, PatentManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("from code view controller")
         theCode.text = String(code)
         patentManager.delegate = self
     }
@@ -37,7 +31,7 @@ class CodeViewController: UIViewController, PatentManagerDelegate {
         if enterdCode.text! == String(code) {
             patentManager.SignUpPatent(FirstName: firstName, LastName: lastName, UserName: userName, Password: password, ChronicDiseases: chroD, Email: email, Gender: gender, PhoneNumber: phoneNumber, DateOfBirth: dateOfBirth, address: address)
             
-    }
+        }
         else{
             pleaseWait.isHidden = true
         }

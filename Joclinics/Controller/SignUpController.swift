@@ -1,10 +1,3 @@
-//
-//  xViewController.swift
-//  Joclinics
-//
-//  Created by Hussam on 16/04/2021.
-//
-
 import UIKit
 
 class SignUpController: UIViewController , UITextFieldDelegate{
@@ -26,7 +19,6 @@ class SignUpController: UIViewController , UITextFieldDelegate{
     var patentManager = PatentManager()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         emailValidation.isHidden = true
         userNameVlidation.isHidden = true
         firstName.delegate = self
@@ -35,12 +27,11 @@ class SignUpController: UIViewController , UITextFieldDelegate{
         email.delegate = self
         patentManager.delegate = self
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
-            NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
     }
-    
     var isExpand : Bool = false
     @objc func keyboardWillShow(notification: NSNotification) {
         if !isExpand {
@@ -48,7 +39,6 @@ class SignUpController: UIViewController , UITextFieldDelegate{
             isExpand = true
         }
     }
-
     @objc func keyboardWillHide(notification: NSNotification) {
         if isExpand {
             self.scrollView.contentSize = CGSize(width : self.scrollView.frame.width,height: self.scrollView.frame.height - 300)
@@ -68,22 +58,21 @@ class SignUpController: UIViewController , UITextFieldDelegate{
         }
         return true
     }
-    
     @IBAction func signUpBtn(_ sender: UIButton) {
         print(firstName.hasText)
-       if (!firstName.hasText || !lastName.hasText || !userName.hasText || !password.hasText || !email.hasText || !gender.hasText || !address.hasText || !phoneNumber.hasText || !lastName.hasText || !lastName.hasText) {
-           self.showToast(message: "الرجاء ادخال جميع البيانات")
-           view.endEditing(true)
-       }
-       else{
-        spinnerView.isHidden = false
+        if (!firstName.hasText || !lastName.hasText || !userName.hasText || !password.hasText || !email.hasText || !gender.hasText || !address.hasText || !phoneNumber.hasText || !lastName.hasText || !lastName.hasText) {
+            self.showToast(message: "الرجاء ادخال جميع البيانات")
+            view.endEditing(true)
+        }
+        else{
+            spinnerView.isHidden = false
             code = Int.random(in: 10000...99999)
             patentManager.CheckIfUserNameOrEmailIsInDatabase(Email: email.text!, UserName: userName.text!, code: code)
         }
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "yyyy-MM-dd"
+        dateFormatter.dateFormat = "yyyy-MM-dd"
         let birthDate = dateFormatter.string(from: dateOfBirth.date)
         if segue.identifier == "toCodePageSegu" {
             let codePage = segue.destination as! CodeViewController
@@ -107,7 +96,6 @@ extension SignUpController : PatentManagerDelegate{
     func didFailWithError() {
         DispatchQueue.main.async {
             self.spinnerView.isHidden = true
-            //self.performSegue(withIdentifier: "toCodePageSegu", sender: self)
             self.userNameVlidation.isHidden = false
             self.emailValidation.isHidden = false
         }
@@ -115,9 +103,7 @@ extension SignUpController : PatentManagerDelegate{
     func theEmailAndUserNameValid(_ patentManager: PatentManager) {
         DispatchQueue.main.async {
             self.spinnerView.isHidden = true
-            //self.dismiss(animated: true, completion: nil)
             self.performSegue(withIdentifier: "toCodePageSegu", sender: self)
-            //self.dismiss(animated: true, completion: nil)
         }
     }
     func didUpdatePatent(_ patentManager: PatentManager, patent: Patent) {
@@ -126,22 +112,22 @@ extension SignUpController : PatentManagerDelegate{
     }
 }
 extension UIViewController {
-func showToast(message : String) {
-    let size = message.count + 170
-    let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/2 - 95, y: self.view.frame.size.height-120, width: CGFloat(size), height: 40))
-    toastLabel.backgroundColor = UIColor.black.withAlphaComponent(0.6)
-    toastLabel.textColor = UIColor.white
-    toastLabel.font = .systemFont(ofSize: 12.0)
-    toastLabel.textAlignment = .center;
-    toastLabel.text = message
-    toastLabel.alpha = 1.0
-    toastLabel.layer.cornerRadius = 20;
-    toastLabel.clipsToBounds  =  true
-    self.view.addSubview(toastLabel)
-    UIView.animate(withDuration: 0.5, delay: 1, options: .curveEaseOut, animations: {
-         toastLabel.alpha = 0.0
-    }, completion: {(isCompleted) in
-        toastLabel.removeFromSuperview()
-    })
-} 
+    func showToast(message : String) {
+        let size = message.count + 170
+        let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/2 - 95, y: self.view.frame.size.height-120, width: CGFloat(size), height: 40))
+        toastLabel.backgroundColor = UIColor.black.withAlphaComponent(0.6)
+        toastLabel.textColor = UIColor.white
+        toastLabel.font = .systemFont(ofSize: 12.0)
+        toastLabel.textAlignment = .center;
+        toastLabel.text = message
+        toastLabel.alpha = 1.0
+        toastLabel.layer.cornerRadius = 20;
+        toastLabel.clipsToBounds  =  true
+        self.view.addSubview(toastLabel)
+        UIView.animate(withDuration: 0.5, delay: 1, options: .curveEaseOut, animations: {
+            toastLabel.alpha = 0.0
+        }, completion: {(isCompleted) in
+            toastLabel.removeFromSuperview()
+        })
+    }
 }
