@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="507" id="KGk-i7-Jjw" customClass="NewsFeedTableViewCell" customModule="Joclinics" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="118"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="368" height="118"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logowithoutback" translatesAutoresizingMaskIntoConstraints="NO" id="ZE4-tB-tLc">
+                        <rect key="frame" x="20" y="10" width="92" height="88"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doctor Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ed3-pr-95X">
+                        <rect key="frame" x="127" y="20" width="101.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1e-We-hs2">
+                        <rect key="frame" x="127" y="49" width="28.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="post test" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LcA-P7-5cU">
+                        <rect key="frame" x="127" y="78" width="67.5" height="21.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="k1e-We-hs2" firstAttribute="top" secondItem="ed3-pr-95X" secondAttribute="bottom" constant="8" id="AKs-0I-gG7"/>
+                    <constraint firstItem="LcA-P7-5cU" firstAttribute="top" secondItem="k1e-We-hs2" secondAttribute="bottom" constant="8" id="DqM-FT-DlY"/>
+                    <constraint firstItem="k1e-We-hs2" firstAttribute="leading" secondItem="ZE4-tB-tLc" secondAttribute="trailing" constant="15" id="SxO-kl-L87"/>
+                    <constraint firstAttribute="bottom" secondItem="ZE4-tB-tLc" secondAttribute="bottom" constant="20" id="T6m-65-4sc"/>
+                    <constraint firstItem="ed3-pr-95X" firstAttribute="leading" secondItem="ZE4-tB-tLc" secondAttribute="trailing" constant="15" id="UXq-b4-al4"/>
+                    <constraint firstItem="LcA-P7-5cU" firstAttribute="leading" secondItem="ZE4-tB-tLc" secondAttribute="trailing" constant="15" id="aLD-2y-NzY"/>
+                    <constraint firstItem="ZE4-tB-tLc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="dsh-lD-Veh"/>
+                    <constraint firstItem="ZE4-tB-tLc" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.25" id="kGs-Je-9OP"/>
+                    <constraint firstItem="ed3-pr-95X" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="sAF-Nl-uch"/>
+                    <constraint firstItem="ZE4-tB-tLc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="uhX-JC-WYa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="doctorName" destination="ed3-pr-95X" id="b5a-sK-GXa"/>
+                <outlet property="post" destination="LcA-P7-5cU" id="1TV-zp-mWR"/>
+                <outlet property="title" destination="k1e-We-hs2" id="d9T-Jq-MXw"/>
+            </connections>
+            <point key="canvasLocation" x="171.01449275362319" y="120.53571428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="logowithoutback" width="100" height="100"/>
+    </resources>
+</document>

@@ -13,9 +13,23 @@
 		A99DAF3C27510447007934C2 /* ClinicsFilterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A99DAF3A27510447007934C2 /* ClinicsFilterTableViewCell.xib */; };
 		A99DAF4327511504007934C2 /* Clinics.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99DAF4227511504007934C2 /* Clinics.swift */; };
 		A99DAF45275116D7007934C2 /* ClinicsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99DAF44275116D7007934C2 /* ClinicsManager.swift */; };
+		A99DAF4727512D85007934C2 /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99DAF4627512D85007934C2 /* Doctor.swift */; };
+		A99DAF4927512EDC007934C2 /* DoctorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99DAF4827512EDB007934C2 /* DoctorManager.swift */; };
+		A99DAF4C27512F7B007934C2 /* ExternalParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99DAF4B27512F7B007934C2 /* ExternalParameters.swift */; };
+		A99DAF4E2751326E007934C2 /* NewsFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99DAF4D2751326E007934C2 /* NewsFeed.swift */; };
+		A99DAF5027513427007934C2 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99DAF4F27513427007934C2 /* Appointment.swift */; };
+		A9A543C2275228C900B90B44 /* NewsFeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A543C1275228C900B90B44 /* NewsFeedController.swift */; };
+		A9A543C527522EAC00B90B44 /* NewsFeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A543C327522EAC00B90B44 /* NewsFeedTableViewCell.swift */; };
+		A9A543C627522EAC00B90B44 /* NewsFeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9A543C427522EAC00B90B44 /* NewsFeedTableViewCell.xib */; };
+		A9A543CB275266D200B90B44 /* StarRatingStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A543C8275266D200B90B44 /* StarRatingStackView.swift */; };
+		A9A543CC275266D200B90B44 /* StarRatingStackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9A543C9275266D200B90B44 /* StarRatingStackView.xib */; };
+		A9A543CD275266D200B90B44 /* StarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A543CA275266D200B90B44 /* StarRatingView.swift */; };
+		A9A543D0275267DD00B90B44 /* ClinicsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A543CE275267DD00B90B44 /* ClinicsTableViewCell.swift */; };
+		A9A543D1275267DD00B90B44 /* ClinicsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9A543CF275267DD00B90B44 /* ClinicsTableViewCell.xib */; };
 		A9BECBE32750BD7E00F12A32 /* PatentClinicsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BECBE22750BD7E00F12A32 /* PatentClinicsController.swift */; };
 		A9BECBE52750C24200F12A32 /* PatentFilterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BECBE42750C24200F12A32 /* PatentFilterController.swift */; };
 		A9BECBE82750C4FB00F12A32 /* FilterStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BECBE72750C4FB00F12A32 /* FilterStruct.swift */; };
+		A9ECE8F22751999400FCAF7D /* AppointmentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ECE8F12751999400FCAF7D /* AppointmentManager.swift */; };
 		DC1A8D582685F78B0086C950 /* ChangePasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1A8D572685F78B0086C950 /* ChangePasswordController.swift */; };
 		DC21EDF8262C7978005423E3 /* CodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC21EDF7262C7978005423E3 /* CodeViewController.swift */; };
 		DC8F7912262B3AD6006FEEBE /* PatentProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8F7911262B3AD6006FEEBE /* PatentProfileController.swift */; };
@@ -41,9 +55,23 @@
 		A99DAF3A27510447007934C2 /* ClinicsFilterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClinicsFilterTableViewCell.xib; sourceTree = "<group>"; };
 		A99DAF4227511504007934C2 /* Clinics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clinics.swift; sourceTree = "<group>"; };
 		A99DAF44275116D7007934C2 /* ClinicsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicsManager.swift; sourceTree = "<group>"; };
+		A99DAF4627512D85007934C2 /* Doctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doctor.swift; sourceTree = "<group>"; };
+		A99DAF4827512EDB007934C2 /* DoctorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorManager.swift; sourceTree = "<group>"; };
+		A99DAF4B27512F7B007934C2 /* ExternalParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalParameters.swift; sourceTree = "<group>"; };
+		A99DAF4D2751326E007934C2 /* NewsFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeed.swift; sourceTree = "<group>"; };
+		A99DAF4F27513427007934C2 /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
+		A9A543C1275228C900B90B44 /* NewsFeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedController.swift; sourceTree = "<group>"; };
+		A9A543C327522EAC00B90B44 /* NewsFeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedTableViewCell.swift; sourceTree = "<group>"; };
+		A9A543C427522EAC00B90B44 /* NewsFeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsFeedTableViewCell.xib; sourceTree = "<group>"; };
+		A9A543C8275266D200B90B44 /* StarRatingStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarRatingStackView.swift; sourceTree = "<group>"; };
+		A9A543C9275266D200B90B44 /* StarRatingStackView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StarRatingStackView.xib; sourceTree = "<group>"; };
+		A9A543CA275266D200B90B44 /* StarRatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarRatingView.swift; sourceTree = "<group>"; };
+		A9A543CE275267DD00B90B44 /* ClinicsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicsTableViewCell.swift; sourceTree = "<group>"; };
+		A9A543CF275267DD00B90B44 /* ClinicsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClinicsTableViewCell.xib; sourceTree = "<group>"; };
 		A9BECBE22750BD7E00F12A32 /* PatentClinicsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatentClinicsController.swift; sourceTree = "<group>"; };
 		A9BECBE42750C24200F12A32 /* PatentFilterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatentFilterController.swift; sourceTree = "<group>"; };
 		A9BECBE72750C4FB00F12A32 /* FilterStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterStruct.swift; sourceTree = "<group>"; };
+		A9ECE8F12751999400FCAF7D /* AppointmentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentManager.swift; sourceTree = "<group>"; };
 		DC1A8D572685F78B0086C950 /* ChangePasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordController.swift; sourceTree = "<group>"; };
 		DC21EDF7262C7978005423E3 /* CodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeViewController.swift; sourceTree = "<group>"; };
 		DC8F7911262B3AD6006FEEBE /* PatentProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatentProfileController.swift; sourceTree = "<group>"; };
@@ -80,14 +108,29 @@
 			children = (
 				A99DAF3927510447007934C2 /* ClinicsFilterTableViewCell.swift */,
 				A99DAF3A27510447007934C2 /* ClinicsFilterTableViewCell.xib */,
+				A9A543C327522EAC00B90B44 /* NewsFeedTableViewCell.swift */,
+				A9A543C427522EAC00B90B44 /* NewsFeedTableViewCell.xib */,
+				A9A543CE275267DD00B90B44 /* ClinicsTableViewCell.swift */,
+				A9A543CF275267DD00B90B44 /* ClinicsTableViewCell.xib */,
 			);
 			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		A9A543C72752667D00B90B44 /* ExternalLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				A9A543C8275266D200B90B44 /* StarRatingStackView.swift */,
+				A9A543C9275266D200B90B44 /* StarRatingStackView.xib */,
+				A9A543CA275266D200B90B44 /* StarRatingView.swift */,
+			);
+			path = ExternalLibrary;
 			sourceTree = "<group>";
 		};
 		A9BECBE62750C4CC00F12A32 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
 				A9BECBE72750C4FB00F12A32 /* FilterStruct.swift */,
+				A99DAF4B27512F7B007934C2 /* ExternalParameters.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -118,6 +161,7 @@
 				A99DAF322750EB4A007934C2 /* TableViewCells */,
 				DC9B06532623195400B9E49A /* Controller */,
 				A9BECBE62750C4CC00F12A32 /* Helper */,
+				A9A543C72752667D00B90B44 /* ExternalLibrary */,
 				DC9B0645262318EB00B9E49A /* Assets.xcassets */,
 				DC9B064A262318EB00B9E49A /* Info.plist */,
 			);
@@ -139,6 +183,7 @@
 				A9BECBE42750C24200F12A32 /* PatentFilterController.swift */,
 				A99DAF332750EBB7007934C2 /* ClinicsSortController.swift */,
 				A99DAF352750EC50007934C2 /* CityFilterController.swift */,
+				A9A543C1275228C900B90B44 /* NewsFeedController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -160,6 +205,11 @@
 				DC90C8512629A58C00AC8AB7 /* PatentManager.swift */,
 				A99DAF4227511504007934C2 /* Clinics.swift */,
 				A99DAF44275116D7007934C2 /* ClinicsManager.swift */,
+				A99DAF4627512D85007934C2 /* Doctor.swift */,
+				A99DAF4827512EDB007934C2 /* DoctorManager.swift */,
+				A99DAF4D2751326E007934C2 /* NewsFeed.swift */,
+				A99DAF4F27513427007934C2 /* Appointment.swift */,
+				A9ECE8F12751999400FCAF7D /* AppointmentManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -222,9 +272,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A99DAF3C27510447007934C2 /* ClinicsFilterTableViewCell.xib in Resources */,
+				A9A543D1275267DD00B90B44 /* ClinicsTableViewCell.xib in Resources */,
 				DC9B0649262318EB00B9E49A /* LaunchScreen.storyboard in Resources */,
+				A9A543C627522EAC00B90B44 /* NewsFeedTableViewCell.xib in Resources */,
 				DC90C84B26298B1800AC8AB7 /* PatentPage.storyboard in Resources */,
 				DC9B0646262318EB00B9E49A /* Assets.xcassets in Resources */,
+				A9A543CC275266D200B90B44 /* StarRatingStackView.xib in Resources */,
 				DC9B0644262318EA00B9E49A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,22 +293,33 @@
 				A9BECBE52750C24200F12A32 /* PatentFilterController.swift in Sources */,
 				A99DAF4327511504007934C2 /* Clinics.swift in Sources */,
 				A99DAF3B27510447007934C2 /* ClinicsFilterTableViewCell.swift in Sources */,
+				A99DAF4927512EDC007934C2 /* DoctorManager.swift in Sources */,
 				DC90C8522629A58C00AC8AB7 /* PatentManager.swift in Sources */,
 				A99DAF362750EC50007934C2 /* CityFilterController.swift in Sources */,
 				A9BECBE82750C4FB00F12A32 /* FilterStruct.swift in Sources */,
 				A99DAF45275116D7007934C2 /* ClinicsManager.swift in Sources */,
+				A99DAF4C27512F7B007934C2 /* ExternalParameters.swift in Sources */,
 				DC8F7912262B3AD6006FEEBE /* PatentProfileController.swift in Sources */,
+				A9ECE8F22751999400FCAF7D /* AppointmentManager.swift in Sources */,
+				A9A543CB275266D200B90B44 /* StarRatingStackView.swift in Sources */,
 				A99DAF342750EBB7007934C2 /* ClinicsSortController.swift in Sources */,
 				DC1A8D582685F78B0086C950 /* ChangePasswordController.swift in Sources */,
+				A9A543C527522EAC00B90B44 /* NewsFeedTableViewCell.swift in Sources */,
 				DC9B063D262318EA00B9E49A /* AppDelegate.swift in Sources */,
+				A9A543C2275228C900B90B44 /* NewsFeedController.swift in Sources */,
 				DC21EDF8262C7978005423E3 /* CodeViewController.swift in Sources */,
 				DC90C83C262981AD00AC8AB7 /* ViewController.swift in Sources */,
 				DC90C8412629829100AC8AB7 /* SignUpController.swift in Sources */,
 				DC90C8552629B37500AC8AB7 /* SpinnerViewController.swift in Sources */,
+				A99DAF4E2751326E007934C2 /* NewsFeed.swift in Sources */,
+				A9A543CD275266D200B90B44 /* StarRatingView.swift in Sources */,
+				A99DAF5027513427007934C2 /* Appointment.swift in Sources */,
 				DCC39C2F2680F15E00D87CA2 /* EmailVlidationController.swift in Sources */,
 				DC9B063F262318EA00B9E49A /* SceneDelegate.swift in Sources */,
 				DC90C84E26298B4600AC8AB7 /* PatentPageController.swift in Sources */,
 				DC90C8472629832D00AC8AB7 /* Patent.swift in Sources */,
+				A9A543D0275267DD00B90B44 /* ClinicsTableViewCell.swift in Sources */,
+				A99DAF4727512D85007934C2 /* Doctor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

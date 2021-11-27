@@ -2,7 +2,7 @@ import Foundation
 
 struct Clinics : Codable{
     let name, phoneNumber, location: String
-    let rate: Int
+    let rate: Float
     let classification: String
     let log, lat: Double
     let distance: String?

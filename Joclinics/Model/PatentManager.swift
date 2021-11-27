@@ -8,7 +8,7 @@ protocol PatentManagerDelegate {
     func doneSendEmail (_ patentManager: PatentManager)
 }
 struct PatentManager{
-    let patentURL = "https://rhsmartsolution.com/JoclinicsAPI/api/patent"
+    let patentURL = "\(baseURL)/api/patent"
     
     var delegate : PatentManagerDelegate?
     
