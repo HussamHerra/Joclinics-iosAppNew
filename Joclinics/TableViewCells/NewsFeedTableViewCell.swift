@@ -1,16 +1,12 @@
-//
-//  NewsFeedTableViewCell.swift
-//  Joclinics
-//
-//  Created by Hussam Abuherra on 27/11/2021.
-//
-
 import UIKit
 
 class NewsFeedTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var post: UILabel!
+    @IBOutlet weak var view: UIView!
+    @IBOutlet weak var doctorImage: UIImageView!
+//    @IBOutlet weak var post: UILabel!
     @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var postView: UITextView!
     @IBOutlet weak var doctorName: UILabel!
     static let identifier = "cell"
     
@@ -20,8 +16,11 @@ class NewsFeedTableViewCell: UITableViewCell {
     
     func configure (with newsFeed: NewsFeedData){
         self.title.text = newsFeed.title
-        self.post.text = newsFeed.description
+        self.postView.text = newsFeed.description
         self.doctorName.text = newsFeed.docName
+        if newsFeed.docGender == "انثى" {
+            self.doctorImage.image = UIImage(named: "WomenDoctor.svg")
+        }        
     }
     
     override func awakeFromNib() {
@@ -31,6 +30,7 @@ class NewsFeedTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+        view.frame.size.height = 500
     }
     
 }

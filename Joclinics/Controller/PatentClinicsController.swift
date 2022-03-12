@@ -31,6 +31,7 @@ class PatentClinicsController: UIViewController , UITableViewDelegate,  UITableV
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        let langStr = Locale.current.languageCode
         pleaseWait.isHidden = false
         clinicsManager.delegate = self
         clinicsManager.getClinics()

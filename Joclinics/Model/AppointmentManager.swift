@@ -3,12 +3,13 @@ import Foundation
 
 protocol AppointmentManagerDelegate {
     func didFailWithError()
+    func didGetAppointment(appointment : [Appointment])
 }
 
 struct AppointmentManager {
     let appointmentURL = "\(baseURL)/api/Appointment/"
     
-    let delegate :AppointmentManagerDelegate?
+    var delegate :AppointmentManagerDelegate?
     
     func getPatentAppointment(id  :Int){
         let urlString = "\(appointmentURL)/getPatentAppointment?id=\(id)"
@@ -22,8 +23,11 @@ struct AppointmentManager {
                 }
                 if let safeData = data{
                     do{
-                        let jsonResponse = try JSONSerialization.jsonObject(with: safeData, options: [])
-                        print(jsonResponse)
+//                        let jsonResponse = try JSONSerialization.jsonObject(with: safeData, options: [])
+//                        print(jsonResponse)
+                        let decoder = JSONDecoder()
+                        let decodedData = try decoder.decode([Appointment].self, from: safeData)
+                        self.delegate!.didGetAppointment(appointment : decodedData)
                     }
                     catch let newError {
                         print("Error from get clinics API  : " , newError)

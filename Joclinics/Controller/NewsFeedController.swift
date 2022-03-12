@@ -3,17 +3,17 @@
 import UIKit
 
 class NewsFeedController: UIViewController , UITableViewDelegate,  UITableViewDataSource {
-    @IBOutlet weak var navBar: UINavigationBar!
     var listOfPosts : [NewsFeedData] = []
     var newsFeed = DoctorManager()
     let refreshControl = UIRefreshControl()
     var endList = false
-    let tableview: UITableView = {
-        let tv = UITableView()
-        tv.backgroundColor = .white
-        tv.translatesAutoresizingMaskIntoConstraints = false
-        return tv
-    }()
+    @IBOutlet weak var tableview: UITableView!
+//    let tableview: UITableView = {
+//        let tv = UITableView()
+//        tv.backgroundColor = .white
+//        tv.translatesAutoresizingMaskIntoConstraints = false
+//        return tv
+//    }()
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,17 +24,19 @@ class NewsFeedController: UIViewController , UITableViewDelegate,  UITableViewDa
         refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
         refreshControl.tintColor = .black
         newsFeed.getNewsFeed(num: 0)
+//        self.tableview.rowHeight = UITableView.automaticDimension;
+//        self.tableview.estimatedRowHeight = 30;
     }
     func setUpTableView(){
         tableview.register(NewsFeedTableViewCell.nib(), forCellReuseIdentifier: NewsFeedTableViewCell.identifier)
         tableview.backgroundColor = UIColor.white
-        view.addSubview(tableview)
-        NSLayoutConstraint.activate([
-            tableview.topAnchor.constraint(equalTo: self.view.topAnchor),
-            tableview.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
-            tableview.rightAnchor.constraint(equalTo: self.view.rightAnchor),
-            tableview.leftAnchor.constraint(equalTo: self.view.leftAnchor)
-        ])
+//        view.addSubview(tableview)
+//        NSLayoutConstraint.activate([
+//            tableview.topAnchor.constraint(equalTo: self.view.topAnchor),
+//            tableview.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
+//            tableview.rightAnchor.constraint(equalTo: self.view.rightAnchor),
+//            tableview.leftAnchor.constraint(equalTo: self.view.leftAnchor)
+//        ])
         tableview.addSubview(refreshControl)
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -53,7 +55,6 @@ class NewsFeedController: UIViewController , UITableViewDelegate,  UITableViewDa
         }
         return cell
     }
-    
     @objc func refresh(_ sender: AnyObject) {
         listOfPosts = []
         self.endList = false

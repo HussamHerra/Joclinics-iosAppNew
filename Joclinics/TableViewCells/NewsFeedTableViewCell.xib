@@ -5,64 +5,78 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="507" id="KGk-i7-Jjw" customClass="NewsFeedTableViewCell" customModule="Joclinics" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="368" height="118"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="521" id="KGk-i7-Jjw" customClass="NewsFeedTableViewCell" customModule="Joclinics" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="366" height="132"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="368" height="118"/>
+                <rect key="frame" x="0.0" y="0.0" width="366" height="132"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logowithoutback" translatesAutoresizingMaskIntoConstraints="NO" id="ZE4-tB-tLc">
-                        <rect key="frame" x="20" y="10" width="92" height="88"/>
-                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doctor Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ed3-pr-95X">
-                        <rect key="frame" x="127" y="20" width="101.5" height="21"/>
+                        <rect key="frame" x="126.5" y="20" width="101.5" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1e-We-hs2">
-                        <rect key="frame" x="127" y="49" width="28.5" height="21"/>
+                        <rect key="frame" x="126.5" y="49" width="28.5" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="post test" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LcA-P7-5cU">
-                        <rect key="frame" x="127" y="78" width="67.5" height="21.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Doctor" translatesAutoresizingMaskIntoConstraints="NO" id="ZE4-tB-tLc">
+                        <rect key="frame" x="20" y="15" width="91.5" height="88"/>
+                    </imageView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Post from hussam" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s36-p3-XF6">
+                        <rect key="frame" x="126.5" y="78" width="221" height="26"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="textColor" systemColor="labelColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
                 </subviews>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="k1e-We-hs2" firstAttribute="top" secondItem="ed3-pr-95X" secondAttribute="bottom" constant="8" id="AKs-0I-gG7"/>
-                    <constraint firstItem="LcA-P7-5cU" firstAttribute="top" secondItem="k1e-We-hs2" secondAttribute="bottom" constant="8" id="DqM-FT-DlY"/>
+                    <constraint firstItem="s36-p3-XF6" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.219697" id="D1S-uO-0HT"/>
+                    <constraint firstItem="ZE4-tB-tLc" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.745763" id="J8E-rp-mqW"/>
+                    <constraint firstItem="s36-p3-XF6" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.603825" id="RNf-Mv-MEM"/>
                     <constraint firstItem="k1e-We-hs2" firstAttribute="leading" secondItem="ZE4-tB-tLc" secondAttribute="trailing" constant="15" id="SxO-kl-L87"/>
-                    <constraint firstAttribute="bottom" secondItem="ZE4-tB-tLc" secondAttribute="bottom" constant="20" id="T6m-65-4sc"/>
+                    <constraint firstAttribute="bottom" secondItem="ZE4-tB-tLc" secondAttribute="bottom" constant="15" id="T6m-65-4sc"/>
                     <constraint firstItem="ed3-pr-95X" firstAttribute="leading" secondItem="ZE4-tB-tLc" secondAttribute="trailing" constant="15" id="UXq-b4-al4"/>
-                    <constraint firstItem="LcA-P7-5cU" firstAttribute="leading" secondItem="ZE4-tB-tLc" secondAttribute="trailing" constant="15" id="aLD-2y-NzY"/>
-                    <constraint firstItem="ZE4-tB-tLc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="dsh-lD-Veh"/>
+                    <constraint firstItem="ZE4-tB-tLc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="dsh-lD-Veh"/>
+                    <constraint firstItem="s36-p3-XF6" firstAttribute="leading" secondItem="ZE4-tB-tLc" secondAttribute="trailing" constant="15" id="hFN-Mn-IIs"/>
                     <constraint firstItem="ZE4-tB-tLc" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.25" id="kGs-Je-9OP"/>
+                    <constraint firstItem="s36-p3-XF6" firstAttribute="top" secondItem="k1e-We-hs2" secondAttribute="bottom" constant="8" id="qKf-2c-Ilm"/>
                     <constraint firstItem="ed3-pr-95X" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="sAF-Nl-uch"/>
                     <constraint firstItem="ZE4-tB-tLc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="uhX-JC-WYa"/>
+                    <constraint firstItem="ZE4-tB-tLc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="xNW-dO-rye"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="doctorImage" destination="ZE4-tB-tLc" id="ir6-Sw-kfF"/>
                 <outlet property="doctorName" destination="ed3-pr-95X" id="b5a-sK-GXa"/>
-                <outlet property="post" destination="LcA-P7-5cU" id="1TV-zp-mWR"/>
+                <outlet property="postView" destination="s36-p3-XF6" id="Gh9-zi-xpH"/>
                 <outlet property="title" destination="k1e-We-hs2" id="d9T-Jq-MXw"/>
+                <outlet property="view" destination="H2p-sc-9uM" id="dpI-De-gTb"/>
             </connections>
-            <point key="canvasLocation" x="171.01449275362319" y="120.53571428571428"/>
+            <point key="canvasLocation" x="168.11594202898553" y="125.22321428571428"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="logowithoutback" width="100" height="100"/>
+        <image name="Doctor" width="511" height="511"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

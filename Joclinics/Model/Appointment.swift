@@ -4,7 +4,7 @@ import Foundation
 struct Appointment: Codable {
     let id: Int
     let clinicName, doctorName, specialization, date: String
-    let welcomeCase, hour, doctorGender: String
+    let caseDescription, hour, doctorGender: String
     let log, lat: Double
     let clinicNumber, clinicClassification: String
 
@@ -14,7 +14,7 @@ struct Appointment: Codable {
         case doctorName = "Doctor_Name"
         case specialization = "Specialization"
         case date = "Date"
-        case welcomeCase = "Case"
+        case caseDescription = "Case"
         case hour
         case doctorGender = "Doctor_gender"
         case log, lat
